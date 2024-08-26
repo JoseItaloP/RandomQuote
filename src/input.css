@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Moderustic:wght@300..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.textChange {
+    background-color: #d4d4d8;
+    color: #fafafa;
+    animation: outText;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.AnimationSurge{
+    animation: AnimationSurge 1s linear;
+}
+
+.overy{
+    overflow-y: auto;
+    font-size: 1.6em;
+    max-height: 15rem;
+}
+
+.animationLoading{
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51d4db;
+    border-radius: 50%;
+    animation: rotateting 1s infinite;
+}
+
+@keyframes rotateting {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes outText {
+    to{
+        width: 0;
+        display: none;
+        overflow: hidden;
+    }
+}
+
+@keyframes AnimationSurge{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes Typing{
+    from{ width:0; }
+}
